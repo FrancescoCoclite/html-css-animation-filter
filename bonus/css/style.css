@@ -1,0 +1,44 @@
+.lago{
+   width: 610px;
+   height: 350px;
+   background: red;
+   background-image:url(../img/lago.jpg);
+   position: relative;
+}
+.quack{
+    position: absolute;
+    left: 70px;
+    bottom: 60px;
+    width: 50px;
+    transition: all 8s ;
+}
+
+.lago:hover .quack {
+
+    animation: papera 15s linear;
+}
+@keyframes papera {
+    0% {
+        bottom: 60px;
+        left: 75px;
+    }
+    30% {
+        left: calc(190px + 100px);
+        bottom: 90px;
+    }
+    100% {
+        left: calc(90% + 20px);
+        bottom: 60px;
+    }
+}
+.nuvole{
+    height: 20%;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    transition: all 10s;
+} 
+.lago:hover .nuvole{
+    right: 47%;
+}
